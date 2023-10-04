@@ -19,7 +19,7 @@ config.translations = {
 
 config.git = {
   content_repo: "https://github.com/IDEMSInternational/plh-kids-app-content.git",
-  content_tag_latest: "1.1.1",
+  content_tag_latest: "1.1.2",
 };
 
 config.app_data.output_path = "./app_data";
