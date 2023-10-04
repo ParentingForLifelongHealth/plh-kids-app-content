@@ -16,6 +16,14 @@ config.translations = {
   translated_strings_path: "packages/app-data/translations_source/from_translators",
   source_strings_path: "packages/app-data/translations_source/to_translate",
 }
+
+config.git = {
+  content_repo: "https://github.com/IDEMSInternational/plh-kids-app-content.git",
+  content_tag_latest: "1.1.1",
+};
+
+config.app_data.output_path = "./app_data";
+
 // Override any app constants here
 config.app_config.APP_HEADER_DEFAULTS.title = "ParentApp for Kids"
 config.app_config.APP_SIDEMENU_DEFAULTS.title = "ParentApp for Kids"
