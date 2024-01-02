@@ -22,6 +22,7 @@ config.git = {
   content_tag_latest: "1.1.2",
 };
 
+config.api.db_name = "plh_kids"
 config.app_data.output_path = "./app_data";
 
 // Override any app constants here
