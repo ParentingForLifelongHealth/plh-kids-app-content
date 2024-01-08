@@ -10,7 +10,7 @@
       "rows": [
         {
           "name": "top_text",
-          "value": "We all sometimes want to tell our teens \"You must do this, or else… trouble!\", but it often does not make them follow rules better.  \n\nInstead, you can help your teen make good choices by showing you trust them and speaking with them:",
+          "value": "We all sometimes want to tell our teens, \"You must do this, or else… trouble!\" but it often does not make them follow rules better.\n\nInstead, you can help your teen make good choices by showing you trust them and speaking with them:\"",
           "_translations": {
             "value": {}
           },
@@ -83,7 +83,7 @@
             },
             {
               "name": "text_1",
-              "value": "If something goes wrong, ask \"How could you have done that differently?\"",
+              "value": "If something goes wrong, ask, \"How could you have done that differently?\"",
               "_translations": {
                 "value": {}
               },
