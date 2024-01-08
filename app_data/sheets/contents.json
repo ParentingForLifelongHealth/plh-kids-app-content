@@ -1,4 +1,5 @@
 {
+  "asset_pack": {},
   "data_list": {
     "activity_data_list": {
       "flow_type": "data_list",
@@ -244,6 +245,18 @@
       "flow_type": "data_list",
       "flow_name": "common_topic_tasks",
       "_xlsxPath": "global/data/topic_task_data/topic_tasks.xlsx"
+    },
+    "connect_articles": {
+      "flow_type": "data_list",
+      "flow_name": "connect_articles",
+      "data_list_name": "connect_articles",
+      "_xlsxPath": "global/data/module_data/connect.xlsx"
+    },
+    "connect_categories": {
+      "flow_type": "data_list",
+      "flow_name": "connect_categories",
+      "data_list_name": "connect_categories",
+      "_xlsxPath": "global/data/module_data/connect.xlsx"
     },
     "connect_specific_task_gs": {
       "flow_type": "data_list",
@@ -1105,6 +1118,11 @@
       "flow_name": "app_menu_unlock_workshops_pop",
       "_xlsxPath": "global/templates/core_templates/settings.xlsx"
     },
+    "article": {
+      "flow_type": "template",
+      "flow_name": "article",
+      "_xlsxPath": "global/templates/article_kids.xlsx"
+    },
     "banner": {
       "flow_type": "template",
       "flow_name": "banner",
@@ -1350,6 +1368,11 @@
       "flow_name": "essential_tools",
       "_xlsxPath": "global/templates/core_templates/essential_tools.xlsx"
     },
+    "extra_section": {
+      "flow_type": "template",
+      "flow_name": "extra_section",
+      "_xlsxPath": "global/templates/article_kids.xlsx"
+    },
     "footer": {
       "flow_type": "template",
       "flow_name": "footer",
@@ -1577,6 +1600,11 @@
       "flow_name": "library_activity",
       "_xlsxPath": "global/templates/core_templates/topics.xlsx"
     },
+    "media_transcript": {
+      "flow_type": "template",
+      "flow_name": "media_transcript",
+      "_xlsxPath": "global/templates/article_kids.xlsx"
+    },
     "module_card": {
       "flow_type": "template",
       "flow_name": "module_card",
@@ -1637,6 +1665,11 @@
       "flow_name": "parenting_tips_reply",
       "_xlsxPath": "global/templates/top_templates/library_templates/help_me_now.xlsx"
     },
+    "question": {
+      "flow_type": "template",
+      "flow_name": "question",
+      "_xlsxPath": "global/templates/article_kids.xlsx"
+    },
     "read": {
       "flow_type": "template",
       "flow_name": "read",
@@ -1658,6 +1691,11 @@
       "flow_type": "template",
       "flow_name": "relax_text",
       "_xlsxPath": "global/data/library_data/relax_data.xlsx"
+    },
+    "sections": {
+      "flow_type": "template",
+      "flow_name": "sections",
+      "_xlsxPath": "global/templates/article_kids.xlsx"
     },
     "self_care_accordion_item": {
       "flow_type": "template",
@@ -1852,7 +1890,7 @@
     "topic_activity": {
       "flow_type": "template",
       "flow_name": "topic_activity",
-      "_xlsxPath": "global/templates/core_templates/topic_activity.xlsx"
+      "_xlsxPath": "global/templates/type_templates/types.xlsx"
     },
     "understand_acc_sect": {
       "flow_type": "template",
