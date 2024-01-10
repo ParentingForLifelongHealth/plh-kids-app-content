@@ -61,6 +61,9 @@
         "quiz.1.option.6.text": {
           "eng": "option1.6"
         },
+        "quiz.2.question": {
+          "eng": "hey"
+        },
         "quiz.2.option.1.text": {
           "eng": "option2.1"
         },
@@ -78,6 +81,9 @@
         },
         "quiz.2.option.6.text": {
           "eng": "option"
+        },
+        "quiz.3.question": {
+          "eng": "hello"
         },
         "quiz.3.option.1.text": {
           "eng": "option"
@@ -134,6 +140,7 @@
           }
         },
         "2": {
+          "question": "hey",
           "option": {
             "1": {
               "text": "option2.1"
@@ -156,6 +163,7 @@
           }
         },
         "3": {
+          "question": "hello",
           "option": {
             "1": {
               "text": "option"
@@ -335,5 +343,5 @@
       "category_data": "connect_categories"
     }
   ],
-  "_xlsxPath": "global/data/module_data/connect.xlsx"
+  "_xlsxPath": "data/module_data/connect.xlsx"
 }
