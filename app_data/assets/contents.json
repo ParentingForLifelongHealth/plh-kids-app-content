@@ -1,19 +1,19 @@
 {
   "android/icon-background.png": {
-    "md5Checksum": "e9df82e39ad72a51390068f2c531d820",
-    "size_kb": 8.1
+    "md5Checksum": "8711f369969c25216e0013c4010e0907",
+    "size_kb": 21.4
   },
   "android/icon-foreground.png": {
-    "md5Checksum": "bdbd4c7982760b8fdd81752067be3cec",
-    "size_kb": 57
+    "md5Checksum": "b3e20d69150e73f0d6417df4e6a43f5f",
+    "size_kb": 54.2
   },
   "android/icon.png": {
-    "md5Checksum": "bdbd4c7982760b8fdd81752067be3cec",
-    "size_kb": 57
+    "md5Checksum": "8b06ee4d3e19163f9fc78e7d076611ef",
+    "size_kb": 67.4
   },
   "android/splash.png": {
-    "md5Checksum": "b5615acc2ee8096f7509da7c7922fbd1",
-    "size_kb": 75
+    "md5Checksum": "dc4bee304ad1241ec865898775b3e586",
+    "size_kb": 239
   },
   "audio/relax/relax_1.mp3": {
     "md5Checksum": "0d23366a438bc1a5faf3d445e389a39a",

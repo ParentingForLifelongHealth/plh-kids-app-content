@@ -202,5 +202,5 @@
       "exclude_from_translation": true
     }
   ],
-  "_xlsxPath": "global/data/library_data/library_globals.xlsx"
+  "_xlsxPath": "data/library_data/library_globals.xlsx"
 }

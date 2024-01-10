@@ -81,5 +81,5 @@
       "_nested_name": "global_partners"
     }
   ],
-  "_xlsxPath": "global/templates/core_templates/app_launch.xlsx"
+  "_xlsxPath": "templates/core_templates/app_launch.xlsx"
 }
