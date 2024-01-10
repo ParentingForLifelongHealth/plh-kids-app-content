@@ -5,10 +5,21 @@
   "data_list_name": "library",
   "rows": [
     {
-      "id": "relax_activities",
-      "tile_style": "parent_centre_1",
+      "id": "picture_books",
       "show": true,
-      "icon_asset": "images/icons/book_white.svg",
+      "title": "Picture Books",
+      "_translations": {
+        "title": {}
+      },
+      "_translatedFields": {
+        "title": {
+          "eng": "Picture Books"
+        }
+      }
+    },
+    {
+      "id": "relax_activities",
+      "show": true,
       "title": "Relaxation Activities",
       "_translations": {
         "title": {}
@@ -16,22 +27,6 @@
       "_translatedFields": {
         "title": {
           "eng": "Relaxation Activities"
-        }
-      }
-    },
-    {
-      "id": "tech_support",
-      "icon_asset": "images/icons/buoy_white.svg",
-      "template": "technical_support",
-      "tile_style": "parent_centre_4",
-      "show": true,
-      "title": "Technical Support",
-      "_translations": {
-        "title": {}
-      },
-      "_translatedFields": {
-        "title": {
-          "eng": "Technical Support"
         }
       }
     }

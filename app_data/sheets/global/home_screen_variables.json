@@ -6,7 +6,7 @@
     {
       "type": "declare_global_constant",
       "name": "app_name",
-      "value": "Scaffolding App",
+      "value": "ParentApp for Kids",
       "_translations": {
         "value": {}
       }
@@ -14,47 +14,7 @@
     {
       "type": "declare_global_constant",
       "name": "app_id",
-      "value": "idems.international.scaffolding",
-      "_translations": {
-        "value": {}
-      }
-    },
-    {
-      "type": "declare_global_constant",
-      "name": "habit",
-      "value": "habit",
-      "_translations": {
-        "value": {}
-      }
-    },
-    {
-      "type": "declare_global_constant",
-      "name": "habits",
-      "value": "habits",
-      "_translations": {
-        "value": {}
-      }
-    },
-    {
-      "type": "declare_global_constant",
-      "name": "habit_capital",
-      "value": "Habit",
-      "_translations": {
-        "value": {}
-      }
-    },
-    {
-      "type": "declare_global_constant",
-      "name": "habits_capital",
-      "value": "Habits",
-      "_translations": {
-        "value": {}
-      }
-    },
-    {
-      "type": "declare_global_constant",
-      "name": "drawer",
-      "value": "Things to do",
+      "value": "idems.international.plh_kids",
       "_translations": {
         "value": {}
       }
