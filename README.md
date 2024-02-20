@@ -1,5 +1,5 @@
 # plh-kids-app-content
-This package contains data used in the PLH kids app
+This package contains data used in the PLH Kids app
 
 ## App Preview
 https://plh-kids.web.app
