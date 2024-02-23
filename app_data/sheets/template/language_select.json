@@ -52,7 +52,7 @@
       }
     },
     {
-      "type": "radio_group",
+      "type": "radio_button_grid",
       "name": "language_select",
       "value": "@fields._app_language",
       "_translations": {
@@ -80,7 +80,8 @@
         }
       ],
       "parameter_list": {
-        "answer_list": "@local.language_select_options"
+        "answer_list": "@local.language_select_options",
+        "item_width": "50px"
       },
       "_nested_name": "language_select",
       "_dynamicFields": {
@@ -137,54 +138,38 @@
       }
     },
     {
-      "type": "template",
-      "name": "nav_buttons",
-      "value": "nav_buttons",
+      "type": "button",
+      "name": "button_completed",
+      "value": "Continue",
+      "_translations": {
+        "value": {}
+      },
       "action_list": [
         {
-          "trigger": "completed",
+          "trigger": "click",
           "action_id": "emit",
           "args": [
             "completed"
           ],
-          "_raw": "completed | emit: completed",
-          "_cleaned": "completed | emit: completed"
-        }
-      ],
-      "rows": [
-        {
-          "name": "display_back",
-          "value": false,
-          "type": "set_variable",
-          "_nested_name": "nav_buttons.display_back"
+          "_raw": "click | emit: completed",
+          "_cleaned": "click | emit: completed"
         },
         {
-          "name": "button_completed",
-          "value": "@global.next_button",
-          "_translations": {
-            "value": {}
-          },
-          "type": "set_variable",
-          "_nested_name": "nav_buttons.button_completed",
-          "_dynamicFields": {
-            "value": [
-              {
-                "fullExpression": "@global.next_button",
-                "matchedExpression": "@global.next_button",
-                "type": "global",
-                "fieldName": "next_button"
-              }
-            ]
-          },
-          "_dynamicDependencies": {
-            "@global.next_button": [
-              "value"
-            ]
-          }
+          "trigger": "click",
+          "action_id": "set_field",
+          "args": [
+            "language_selected",
+            true
+          ],
+          "_raw": "click | set_field: language_selected: TRUE",
+          "_cleaned": "click | set_field: language_selected: TRUE"
         }
       ],
-      "_nested_name": "nav_buttons"
+      "parameter_list": {
+        "style": "navigation"
+      },
+      "_nested_name": "button_completed"
     }
   ],
-  "_xlsxPath": "templates/settings.xlsx"
+  "_xlsxPath": "templates/app_launch.xlsx"
 }
