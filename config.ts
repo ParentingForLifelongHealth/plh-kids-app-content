@@ -22,6 +22,8 @@ config.api.db_name = "plh_kids"
 
 config.app_data.output_path = "./app_data";
 
+config.web.favicon_asset = "images/logos/favicon.png";
+
 config.app_config.APP_LANGUAGES.default = "gb_en";
 config.app_config.APP_SIDEMENU_DEFAULTS.title = "ParentApp for Kids";
 config.app_config.APP_HEADER_DEFAULTS.title = "ParentApp for Kids";
