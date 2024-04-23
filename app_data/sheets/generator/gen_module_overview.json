@@ -4,7 +4,7 @@
   "status": "released",
   "parameter_list": {
     "input_data_list": "modules",
-    "output_flow_name": "module_overview_@gen.id",
+    "output_flow_name": "module_@gen.id",
     "output_flow_type": "template",
     "output_flow_subtype": "generated"
   },
