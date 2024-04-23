@@ -1,12 +1,12 @@
 {
-  "flow_name": "book_cover_no_go_sleep",
+  "flow_name": "module_overview_test",
   "flow_subtype": "generated",
   "flow_type": "template",
   "rows": [
     {
       "type": "template",
-      "name": "book_cover",
-      "value": "book_cover",
+      "name": "module_overview",
+      "value": "module_overview",
       "action_list": [
         {
           "trigger": "completed",
@@ -29,26 +29,16 @@
       ],
       "rows": [
         {
-          "name": "book_id",
-          "value": "no_go_sleep",
-          "_translations": {
-            "value": {}
-          },
-          "type": "set_variable",
-          "_nested_name": "book_cover.book_id"
-        },
-        {
           "name": "module_id",
-          "value": "connect",
+          "value": "test",
           "_translations": {
             "value": {}
           },
-          "exclude_from_translation": true,
           "type": "set_variable",
-          "_nested_name": "book_cover.module_id"
+          "_nested_name": "module_overview.module_id"
         }
       ],
-      "_nested_name": "book_cover"
+      "_nested_name": "module_overview"
     }
   ]
 }

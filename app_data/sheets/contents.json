@@ -12,7 +12,7 @@
       "flow_type": "data_list",
       "flow_name": "books",
       "data_list_name": "books",
-      "_xlsxPath": "data/library/books.xlsx"
+      "_xlsxPath": "data/library/test books.xlsx"
     },
     "check_in": {
       "flow_type": "data_list",
@@ -35,7 +35,7 @@
       "flow_type": "data_list",
       "flow_name": "guidance_groups",
       "data_list_name": "guidance_groups",
-      "_xlsxPath": "data/library/books.xlsx"
+      "_xlsxPath": "data/library/test books.xlsx"
     },
     "library_data": {
       "flow_type": "data_list",
@@ -115,12 +115,23 @@
       },
       "_xlsxPath": "templates/modules/check_in.xlsx"
     },
+    "gen_module": {
+      "flow_type": "generator",
+      "flow_name": "gen_module",
+      "parameter_list": {
+        "input_data_list": "modules",
+        "output_flow_name": "module_@gen.id",
+        "output_flow_type": "template",
+        "output_flow_subtype": "generated"
+      },
+      "_xlsxPath": "templates/modules/module_navigation.xlsx"
+    },
     "gen_module_overview": {
       "flow_type": "generator",
       "flow_name": "gen_module_overview",
       "parameter_list": {
         "input_data_list": "modules",
-        "output_flow_name": "module_@gen.id",
+        "output_flow_name": "module_overview_@gen.id",
         "output_flow_type": "template",
         "output_flow_subtype": "generated"
       },
@@ -460,153 +471,18 @@
       "flow_subtype": "generated",
       "flow_type": "template"
     },
-    "book_cover_a_very_important_tree": {
-      "flow_name": "book_cover_a_very_important_tree",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "book_cover_amma_be_back": {
-      "flow_name": "book_cover_amma_be_back",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "book_cover_an_unexpected_adventure": {
-      "flow_name": "book_cover_an_unexpected_adventure",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "book_cover_beautiful_day": {
-      "flow_name": "book_cover_beautiful_day",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "book_cover_bee_and_elephant": {
-      "flow_name": "book_cover_bee_and_elephant",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "book_cover_fifi_and_teddy": {
-      "flow_name": "book_cover_fifi_and_teddy",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "book_cover_katiitis_song": {
-      "flow_name": "book_cover_katiitis_song",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "book_cover_ma_hurry_up": {
-      "flow_name": "book_cover_ma_hurry_up",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "book_cover_moms_red_coat": {
-      "flow_name": "book_cover_moms_red_coat",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "book_cover_no_go_sleep": {
-      "flow_name": "book_cover_no_go_sleep",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "book_cover_rani_first_day": {
-      "flow_name": "book_cover_rani_first_day",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "book_cover_reba_wants_ice": {
-      "flow_name": "book_cover_reba_wants_ice",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "book_cover_scared_tumi": {
-      "flow_name": "book_cover_scared_tumi",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "book_cover_trip_to_tap": {
-      "flow_name": "book_cover_trip_to_tap",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
     "book_cover_who_took_my_shoe": {
       "flow_name": "book_cover_who_took_my_shoe",
       "flow_subtype": "generated",
       "flow_type": "template"
     },
-    "book_page_a_very_important_tree": {
-      "flow_name": "book_page_a_very_important_tree",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "book_page_amma_be_back": {
-      "flow_name": "book_page_amma_be_back",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "book_page_an_unexpected_adventure": {
-      "flow_name": "book_page_an_unexpected_adventure",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "book_page_beautiful_day": {
-      "flow_name": "book_page_beautiful_day",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "book_page_bee_and_elephant": {
-      "flow_name": "book_page_bee_and_elephant",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "book_page_fifi_and_teddy": {
-      "flow_name": "book_page_fifi_and_teddy",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "book_page_katiitis_song": {
-      "flow_name": "book_page_katiitis_song",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "book_page_ma_hurry_up": {
-      "flow_name": "book_page_ma_hurry_up",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "book_page_moms_red_coat": {
-      "flow_name": "book_page_moms_red_coat",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "book_page_no_go_sleep": {
-      "flow_name": "book_page_no_go_sleep",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "book_page_rani_first_day": {
-      "flow_name": "book_page_rani_first_day",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "book_page_reba_wants_ice": {
-      "flow_name": "book_page_reba_wants_ice",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "book_page_scared_tumi": {
-      "flow_name": "book_page_scared_tumi",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "book_page_trip_to_tap": {
-      "flow_name": "book_page_trip_to_tap",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
     "book_page_who_took_my_shoe": {
       "flow_name": "book_page_who_took_my_shoe",
+      "flow_subtype": "generated",
+      "flow_type": "template"
+    },
+    "module_overview_test": {
+      "flow_name": "module_overview_test",
       "flow_subtype": "generated",
       "flow_type": "template"
     },

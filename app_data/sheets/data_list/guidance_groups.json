@@ -12,25 +12,7 @@
         "2",
         "3"
       ]
-    },
-    {
-      "id": "group_b",
-      "description": "Ages 4-6",
-      "child_age_list": [
-        "4",
-        "5",
-        "6"
-      ]
-    },
-    {
-      "id": "group_c",
-      "description": "Ages 7-9",
-      "child_age_list": [
-        "7",
-        "8",
-        "9"
-      ]
     }
   ],
-  "_xlsxPath": "data/library/books.xlsx"
+  "_xlsxPath": "data/library/test books.xlsx"
 }
