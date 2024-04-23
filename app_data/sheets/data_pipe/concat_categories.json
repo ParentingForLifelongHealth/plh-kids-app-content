@@ -7,7 +7,7 @@
       "operation": "concat",
       "args_list": [
         "common_categories",
-        "test_categories"
+        "specific_test_categories"
       ],
       "output_target": "test_categories"
     }

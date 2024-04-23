@@ -61,6 +61,12 @@
       "data_list_name": "relax",
       "_xlsxPath": "data/modules/relax.xlsx"
     },
+    "specific_test_categories": {
+      "flow_type": "data_list",
+      "flow_name": "specific_test_categories",
+      "data_list_name": "specific_test_categories",
+      "_xlsxPath": "data/modules/test modules.xlsx"
+    },
     "test_articles": {
       "flow_type": "data_list",
       "flow_name": "test_articles",
@@ -158,7 +164,7 @@
       "flow_name": "hp_review_gen",
       "parameter_list": {
         "input_data_list": "modules",
-        "output_flow_name": "{@gen.id}_hp_review_challenges",
+        "output_flow_name": "{@gen.id}_hp_review",
         "output_flow_type": "template",
         "output_flow_subtype": "generated"
       },
@@ -726,6 +732,11 @@
     },
     "relax_9": {
       "flow_name": "relax_9",
+      "flow_subtype": "generated",
+      "flow_type": "template"
+    },
+    "test_hp_review": {
+      "flow_name": "test_hp_review",
       "flow_subtype": "generated",
       "flow_type": "template"
     },

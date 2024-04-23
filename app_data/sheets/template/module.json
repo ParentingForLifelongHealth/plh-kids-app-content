@@ -672,9 +672,6 @@
       "type": "data_items",
       "name": "data_items",
       "value": "@local.articles_data_list_name",
-      "parameter_list": {
-        "filter": "@item.category_id == @local.category_id"
-      },
       "rows": [
         {
           "type": "text",
@@ -908,33 +905,11 @@
             "type": "local",
             "fieldName": "articles_data_list_name"
           }
-        ],
-        "parameter_list": {
-          "filter": [
-            {
-              "fullExpression": "@item.category_id == @local.category_id",
-              "matchedExpression": "@item.category_id",
-              "type": "item",
-              "fieldName": "category_id"
-            },
-            {
-              "fullExpression": "@item.category_id == @local.category_id",
-              "matchedExpression": "@local.category_id",
-              "type": "local",
-              "fieldName": "category_id"
-            }
-          ]
-        }
+        ]
       },
       "_dynamicDependencies": {
         "@local.articles_data_list_name": [
           "value"
-        ],
-        "@item.category_id": [
-          "parameter_list.filter"
-        ],
-        "@local.category_id": [
-          "parameter_list.filter"
         ]
       }
     }
