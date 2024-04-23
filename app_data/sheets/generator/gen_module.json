@@ -1,18 +1,18 @@
 {
   "flow_type": "generator",
-  "flow_name": "gen_module_overview",
+  "flow_name": "gen_module",
   "status": "released",
   "parameter_list": {
     "input_data_list": "modules",
-    "output_flow_name": "module_overview_@gen.id",
+    "output_flow_name": "module_@gen.id",
     "output_flow_type": "template",
     "output_flow_subtype": "generated"
   },
   "rows": [
     {
       "type": "template",
-      "name": "module_overview",
-      "value": "module_overview",
+      "name": "module",
+      "value": "module",
       "action_list": [
         {
           "trigger": "completed",
