@@ -7,7 +7,7 @@
     {
       "id": "test",
       "number": 0,
-      "image_asset": "images/modules/wave.svg",
+      "image_asset": "images/icons/faces/happy.svg",
       "relax_id": "relax_1",
       "check_in_id": "check_in_1",
       "title": "Test Module",
