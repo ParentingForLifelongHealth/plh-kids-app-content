@@ -46,30 +46,6 @@
       }
     },
     {
-      "id": "time_yourself",
-      "icon_asset": "images/icons/picture_book.svg",
-      "title": "Time for Yourself",
-      "_translations": {
-        "title": {}
-      }
-    },
-    {
-      "id": "time_child",
-      "icon_asset": "images/icons/picture_book.svg",
-      "title": "Time with Your Child",
-      "_translations": {
-        "title": {}
-      }
-    },
-    {
-      "id": "practise",
-      "icon_asset": "images/icons/pencil.svg",
-      "title": "Practise",
-      "_translations": {
-        "title": {}
-      }
-    },
-    {
       "id": "review",
       "icon_asset": "images/icons/thought_bubble.svg",
       "title": "Review",

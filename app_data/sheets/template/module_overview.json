@@ -215,6 +215,7 @@
       "type": "template",
       "name": "card_relax",
       "value": "relax_card",
+      "condition": false,
       "exclude_from_translation": true,
       "rows": [
         {
@@ -223,6 +224,7 @@
           "_translations": {
             "value": {}
           },
+          "condition": false,
           "exclude_from_translation": true,
           "type": "set_variable",
           "_nested_name": "card_relax.id",
@@ -249,6 +251,7 @@
       "type": "template",
       "name": "card_check_in",
       "value": "category_card",
+      "condition": false,
       "exclude_from_translation": true,
       "rows": [
         {
@@ -257,6 +260,7 @@
           "_translations": {
             "value": {}
           },
+          "condition": false,
           "type": "set_variable",
           "_nested_name": "card_check_in.card_title"
         },
@@ -266,6 +270,7 @@
           "_translations": {
             "value": {}
           },
+          "condition": false,
           "type": "set_variable",
           "_nested_name": "card_check_in.card_icon"
         },
@@ -275,6 +280,7 @@
           "_translations": {
             "value": {}
           },
+          "condition": false,
           "type": "set_variable",
           "_nested_name": "card_check_in.target_template",
           "_dynamicFields": {

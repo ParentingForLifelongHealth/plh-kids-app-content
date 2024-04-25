@@ -15,21 +15,6 @@
       "icon_asset": "images/icons/picture_book.svg"
     },
     {
-      "id": "time_yourself",
-      "title": "Time for Yourself",
-      "icon_asset": "images/icons/picture_book.svg"
-    },
-    {
-      "id": "time_child",
-      "title": "Time with Your Child",
-      "icon_asset": "images/icons/picture_book.svg"
-    },
-    {
-      "id": "practise",
-      "title": "Practise",
-      "icon_asset": "images/icons/pencil.svg"
-    },
-    {
       "id": "review",
       "title": "Review",
       "icon_asset": "images/icons/thought_bubble.svg"
