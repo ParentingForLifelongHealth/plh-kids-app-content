@@ -544,10 +544,10 @@
               "trigger": "completed",
               "action_id": "set_item",
               "args": [],
-              "_raw": "completed | set_item | _index: @item._index + 1, active:true",
-              "_cleaned": "completed | set_item | _index: @item._index + 1, active:true",
+              "_raw": "completed | set_item | index: @item.index + 1, active:true",
+              "_cleaned": "completed | set_item | index: @item.index + 1, active:true",
               "params": {
-                "_index": "@item._index + 1",
+                "index": "@item.index + 1",
                 "active": true
               }
             },
@@ -565,10 +565,10 @@
               "trigger": "uncompleted",
               "action_id": "set_item",
               "args": [],
-              "_raw": "uncompleted | set_item | _index: @item._index - 1, active:true",
-              "_cleaned": "uncompleted | set_item | _index: @item._index - 1, active:true",
+              "_raw": "uncompleted | set_item | index: @item.index - 1, active:true",
+              "_cleaned": "uncompleted | set_item | index: @item.index - 1, active:true",
               "params": {
-                "_index": "@item._index - 1",
+                "index": "@item.index - 1",
                 "active": true
               }
             }
@@ -609,27 +609,27 @@
               "1": {
                 "_raw": [
                   {
-                    "fullExpression": "completed | set_item | _index: @item._index + 1, active:true",
-                    "matchedExpression": "@item._index",
+                    "fullExpression": "completed | set_item | index: @item.index + 1, active:true",
+                    "matchedExpression": "@item.index",
                     "type": "item",
-                    "fieldName": "_index"
+                    "fieldName": "index"
                   }
                 ],
                 "_cleaned": [
                   {
-                    "fullExpression": "completed | set_item | _index: @item._index + 1, active:true",
-                    "matchedExpression": "@item._index",
+                    "fullExpression": "completed | set_item | index: @item.index + 1, active:true",
+                    "matchedExpression": "@item.index",
                     "type": "item",
-                    "fieldName": "_index"
+                    "fieldName": "index"
                   }
                 ],
                 "params": {
-                  "_index": [
+                  "index": [
                     {
-                      "fullExpression": "@item._index + 1",
-                      "matchedExpression": "@item._index",
+                      "fullExpression": "@item.index + 1",
+                      "matchedExpression": "@item.index",
                       "type": "item",
-                      "fieldName": "_index"
+                      "fieldName": "index"
                     }
                   ]
                 }
@@ -637,27 +637,27 @@
               "3": {
                 "_raw": [
                   {
-                    "fullExpression": "uncompleted | set_item | _index: @item._index - 1, active:true",
-                    "matchedExpression": "@item._index",
+                    "fullExpression": "uncompleted | set_item | index: @item.index - 1, active:true",
+                    "matchedExpression": "@item.index",
                     "type": "item",
-                    "fieldName": "_index"
+                    "fieldName": "index"
                   }
                 ],
                 "_cleaned": [
                   {
-                    "fullExpression": "uncompleted | set_item | _index: @item._index - 1, active:true",
-                    "matchedExpression": "@item._index",
+                    "fullExpression": "uncompleted | set_item | index: @item.index - 1, active:true",
+                    "matchedExpression": "@item.index",
                     "type": "item",
-                    "fieldName": "_index"
+                    "fieldName": "index"
                   }
                 ],
                 "params": {
-                  "_index": [
+                  "index": [
                     {
-                      "fullExpression": "@item._index - 1",
-                      "matchedExpression": "@item._index",
+                      "fullExpression": "@item.index - 1",
+                      "matchedExpression": "@item.index",
                       "type": "item",
-                      "fieldName": "_index"
+                      "fieldName": "index"
                     }
                   ]
                 }
@@ -675,6 +675,12 @@
           "_dynamicDependencies": {
             "@item.index": [
               "name",
+              "action_list.1._raw",
+              "action_list.1._cleaned",
+              "action_list.1.params.index",
+              "action_list.3._raw",
+              "action_list.3._cleaned",
+              "action_list.3.params.index",
               "_nested_name"
             ],
             "@local.module_id": [
@@ -685,14 +691,6 @@
             ],
             "@item.id": [
               "value"
-            ],
-            "@item._index": [
-              "action_list.1._raw",
-              "action_list.1._cleaned",
-              "action_list.1.params._index",
-              "action_list.3._raw",
-              "action_list.3._cleaned",
-              "action_list.3.params._index"
             ]
           }
         }
