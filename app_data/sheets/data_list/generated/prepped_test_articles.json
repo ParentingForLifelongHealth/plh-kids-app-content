@@ -1,8 +1,28 @@
 {
-  "flow_name": "test_learn_articles",
+  "flow_name": "prepped_test_articles",
   "flow_subtype": "generated",
   "flow_type": "data_list",
   "rows": [
+    {
+      "id": "intro_1",
+      "category_id": "intro",
+      "text_1": "This week, we are focusing on the topic of **CONNECTION**.\n\nConnecting with your child and spending quality time together makes a big difference to their development.",
+      "completed": "FALSE",
+      "passed": "FALSE"
+    },
+    {
+      "id": "intro_2",
+      "category_id": "intro",
+      "text_1": "**CONNECTING** with our children is not always easy!",
+      "media_transcript": "As caregivers, we all spend time doing things with our children, but giving them our full attention is not always easy. We all face distractions and challenges that make it difficult to spend quality time with our children. When we feel stressed or when our children are being difficult, it can be even harder to find the time and energy to connect with them.",
+      "quiz_1_question": "Have you experienced this?",
+      "quiz_1_option_1_text": "Yes",
+      "quiz_1_feedback_1": "Many people feel this way. We have some easy activities that could help.",
+      "quiz_1_option_2_text": "No",
+      "quiz_1_feedback_2": "It’s great that you make time to connect with your child. We have some extra ideas you might like.",
+      "completed": "FALSE",
+      "passed": "FALSE"
+    },
     {
       "id": "learn_1",
       "category_id": "learn",
@@ -94,6 +114,33 @@
       "category_id": "learn",
       "media_transcript": "Instead of saying “no!” or “that’s wrong!”, use praise and positive responses to encourage your child to keep learning.\n\nIf your child says something that’s wrong (like pointing to an apple and calling it a tomato) you don’t need to say “how can you think that?!” or “that’s wrong!”. \n\nInstead, you can ignore the mistake and respond with the correct name, saying: “That’s an apple. It’s red and round like a tomato, but it’s an apple”. Your child will learn more if they don’t feel criticised or discouraged.",
       "text_2": "Always try to respond to what your child is saying in a positive and enthusiastic way.",
+      "completed": "FALSE",
+      "passed": "FALSE"
+    },
+    {
+      "id": "review_1",
+      "category_id": "review",
+      "text_1": "Here’s how to **CONNECT** with your child using a quick and easy daily activity:",
+      "section_1_title": "**MINIMISE DISTRACTIONS**",
+      "section_1_text": "This helps you to give your full attention to your child.",
+      "section_1_button_text": "More info",
+      "section_1_extra_text": "Giving your child your full attention helps your child to feel connected to you.",
+      "section_2_title": "**FOLLOW YOUR CHILD’S LEAD**",
+      "section_2_text": "Don’t try to change or control what your child is doing.",
+      "section_2_button_text": "More info",
+      "section_2_extra_text": "This helps your child feel important and in control.",
+      "section_3_title": "**OBSERVE AND LISTEN**",
+      "section_3_text": "Pay attention to what your child is doing. Be curious about what they might be thinking and feeling. Talk about that.",
+      "section_3_button_text": "More info",
+      "section_3_extra_text": "This shows your child you are interested and helps your child feel connected to you.",
+      "completed": "FALSE",
+      "passed": "FALSE"
+    },
+    {
+      "id": "home_activity_1",
+      "category_id": "home_activity",
+      "text_1": "Want to try this at home?\n\n We have lots of books you can share with your child to **CONNECT**.",
+      "text_2": "As you go through the book, remember to:\n\nGive your child your full attention\nLet your child lead the activity\nTalk about what interests them\nRespond with praise and encouragement",
       "completed": "FALSE",
       "passed": "FALSE"
     }

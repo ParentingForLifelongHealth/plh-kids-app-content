@@ -4,13 +4,6 @@
   "status": "released",
   "rows": [
     {
-      "name": "with_subtitle",
-      "value": false,
-      "exclude_from_translation": true,
-      "type": "set_variable",
-      "_nested_name": "with_subtitle"
-    },
-    {
       "name": "card_style",
       "value": "landscape",
       "_translations": {
@@ -209,7 +202,7 @@
       "_translations": {
         "value": {}
       },
-      "condition": "@local.with_subtitle",
+      "condition": "!!@local.module_data.description",
       "exclude_from_translation": true,
       "type": "set_variable",
       "_nested_name": "card_subtitle",
@@ -224,10 +217,10 @@
         ],
         "condition": [
           {
-            "fullExpression": "@local.with_subtitle",
-            "matchedExpression": "@local.with_subtitle",
+            "fullExpression": "!!@local.module_data.description",
+            "matchedExpression": "!@local.module_data.description",
             "type": "local",
-            "fieldName": "with_subtitle"
+            "fieldName": "module_data"
           }
         ]
       },
@@ -235,29 +228,29 @@
         "@local.module_data.description": [
           "value"
         ],
-        "@local.with_subtitle": [
+        "!@local.module_data.description": [
           "condition"
         ]
       }
     },
     {
       "name": "card_subtitle",
-      "condition": "!@local.with_subtitle",
+      "condition": "!@local.module_data.description",
       "exclude_from_translation": true,
       "type": "set_variable",
       "_nested_name": "card_subtitle",
       "_dynamicFields": {
         "condition": [
           {
-            "fullExpression": "!@local.with_subtitle",
-            "matchedExpression": "!@local.with_subtitle",
+            "fullExpression": "!@local.module_data.description",
+            "matchedExpression": "!@local.module_data.description",
             "type": "local",
-            "fieldName": "with_subtitle"
+            "fieldName": "module_data"
           }
         ]
       },
       "_dynamicDependencies": {
-        "!@local.with_subtitle": [
+        "!@local.module_data.description": [
           "condition"
         ]
       }
