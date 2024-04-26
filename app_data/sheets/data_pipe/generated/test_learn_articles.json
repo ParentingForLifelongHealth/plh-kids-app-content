@@ -8,7 +8,7 @@
       "args_list": [
         "category_id == \"learn\""
       ],
-      "input_source": "test_articles",
+      "input_source": "prepped_test_articles",
       "output_target": "test_learn_articles"
     }
   ]

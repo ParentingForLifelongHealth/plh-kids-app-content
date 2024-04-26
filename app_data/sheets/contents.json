@@ -26,6 +26,11 @@
       "data_list_name": "common_categories",
       "_xlsxPath": "data/modules/test modules.xlsx"
     },
+    "prepped_test_articles": {
+      "flow_name": "prepped_test_articles",
+      "flow_subtype": "generated",
+      "flow_type": "data_list"
+    },
     "test_categories": {
       "flow_name": "test_categories",
       "flow_subtype": "generated",
@@ -119,6 +124,11 @@
       "flow_name": "test_review_articles",
       "flow_subtype": "generated",
       "flow_type": "data_pipe"
+    },
+    "prep_articles": {
+      "flow_type": "data_pipe",
+      "flow_name": "prep_articles",
+      "_xlsxPath": "data/modules/test modules_data_pipes.xlsx"
     }
   },
   "generator": {

@@ -15,7 +15,7 @@ config.android = {
 
 config.git = {
   content_repo: "https://github.com/IDEMSInternational/plh-kids-app-content.git",
-  content_tag_latest: "1.1.10",
+  content_tag_latest: "1.1.12",
 };
 
 config.api.db_name = "plh_kids"
