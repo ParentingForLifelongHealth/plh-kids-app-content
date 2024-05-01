@@ -392,6 +392,7 @@
       "_translations": {
         "value": {}
       },
+      "condition": false,
       "type": "set_variable",
       "_nested_name": "stringify_categories_array",
       "_dynamicFields": {
@@ -426,6 +427,7 @@
       "_translations": {
         "value": {}
       },
+      "condition": false,
       "_nested_name": "debug_categories_array",
       "_dynamicFields": {
         "value": [
@@ -540,6 +542,7 @@
         "value": {}
       },
       "exclude_from_translation": true,
+      "condition": false,
       "_nested_name": "debug_next_cat",
       "_dynamicFields": {
         "value": [
@@ -631,6 +634,7 @@
         "value": {}
       },
       "exclude_from_translation": true,
+      "condition": false,
       "_nested_name": "debug_previous_cat",
       "_dynamicFields": {
         "value": [
@@ -697,6 +701,7 @@
       "_translations": {
         "value": {}
       },
+      "condition": false,
       "_nested_name": "debug_first_cat",
       "_dynamicFields": {
         "value": [
@@ -772,6 +777,7 @@
       "_translations": {
         "value": {}
       },
+      "condition": false,
       "_nested_name": "debug_last_cat",
       "_dynamicFields": {
         "value": [
@@ -936,470 +942,732 @@
     },
     {
       "type": "data_items",
-      "name": "data_items",
+      "name": "find_first_not_passed",
       "value": "@local.articles_data_list_name",
       "rows": [
         {
-          "type": "text",
-          "name": "test_item",
-          "value": "test item: @item.id",
-          "_translations": {
-            "value": {}
+          "type": "display_group",
+          "name": "continue_loop_@item.id",
+          "parameter_list": {
+            "style": "column"
           },
-          "_nested_name": "data_items.test_item",
-          "_dynamicFields": {
-            "value": [
-              {
-                "fullExpression": "test item: @item.id",
-                "matchedExpression": "@item.id",
-                "type": "item",
-                "fieldName": "id"
-              }
-            ]
-          },
-          "_dynamicDependencies": {
-            "@item.id": [
-              "value"
-            ]
-          }
-        },
-        {
-          "type": "text",
-          "name": "test_local_var",
-          "value": "test local: @local.module_id",
-          "_translations": {
-            "value": {}
-          },
-          "_nested_name": "data_items.test_local_var",
-          "_dynamicFields": {
-            "value": [
-              {
-                "fullExpression": "test local: @local.module_id",
-                "matchedExpression": "@local.module_id",
-                "type": "local",
-                "fieldName": "module_id"
-              }
-            ]
-          },
-          "_dynamicDependencies": {
-            "@local.module_id": [
-              "value"
-            ]
-          }
-        },
-        {
-          "type": "text",
-          "name": "test_item_active",
-          "value": "test passed: @item.passed",
-          "_translations": {
-            "value": {}
-          },
-          "_nested_name": "data_items.test_item_active",
-          "_dynamicFields": {
-            "value": [
-              {
-                "fullExpression": "test passed: @item.passed",
-                "matchedExpression": "@item.passed",
-                "type": "item",
-                "fieldName": "passed"
-              }
-            ]
-          },
-          "_dynamicDependencies": {
-            "@item.passed": [
-              "value"
-            ]
-          }
-        },
-        {
-          "type": "text",
-          "name": "test_item_completed",
-          "value": "test completed: @item.completed",
-          "_translations": {
-            "value": {}
-          },
-          "_nested_name": "data_items.test_item_completed",
-          "_dynamicFields": {
-            "value": [
-              {
-                "fullExpression": "test completed: @item.completed",
-                "matchedExpression": "@item.completed",
-                "type": "item",
-                "fieldName": "completed"
-              }
-            ]
-          },
-          "_dynamicDependencies": {
-            "@item.completed": [
-              "value"
-            ]
-          }
-        },
-        {
-          "type": "text",
-          "name": "test_item_last",
-          "value": "test last: @item._last",
-          "_translations": {
-            "value": {}
-          },
-          "_nested_name": "data_items.test_item_last",
-          "_dynamicFields": {
-            "value": [
-              {
-                "fullExpression": "test last: @item._last",
-                "matchedExpression": "@item._last",
-                "type": "item",
-                "fieldName": "_last"
-              }
-            ]
-          },
-          "_dynamicDependencies": {
-            "@item._last": [
-              "value"
-            ]
-          }
-        },
-        {
-          "type": "template",
-          "name": "article_@item._index",
-          "value": "article_@local.module_id@local.join@item.id",
-          "action_list": [
+          "condition": "!!!@local.stop_loop",
+          "rows": [
             {
-              "trigger": "completed",
-              "action_id": "set_item",
-              "args": [],
-              "_raw": "completed | set_item | passed: true",
-              "_cleaned": "completed | set_item | passed: true",
-              "params": {
-                "passed": true
-              }
-            },
-            {
-              "trigger": "completed",
-              "action_id": "set_item",
-              "args": [],
-              "_raw": "completed | set_item | completed: true",
-              "_cleaned": "completed | set_item | completed: true",
-              "params": {
-                "completed": true
-              }
-            },
-            {
-              "trigger": "uncompleted",
-              "action_id": "set_item",
-              "args": [],
-              "_raw": "uncompleted | set_item | _index: @item._index - 1, passed: false",
-              "_cleaned": "uncompleted | set_item | _index: @item._index - 1, passed: false",
-              "params": {
-                "_index": "@item._index - 1",
-                "passed": false
-              }
-            }
-          ],
-          "exclude_from_translation": true,
-          "condition": "(!@item.passed) && (!@item._last)",
-          "rows": [],
-          "_nested_name": "data_items.article_@item._index",
-          "_dynamicFields": {
-            "name": [
-              {
-                "fullExpression": "article_@item._index",
-                "matchedExpression": "@item._index",
-                "type": "item",
-                "fieldName": "_index"
-              }
-            ],
-            "value": [
-              {
-                "fullExpression": "article_@local.module_id@local.join@item.id",
-                "matchedExpression": "@local.module_id",
-                "type": "local",
-                "fieldName": "module_id"
+              "type": "text",
+              "name": "test_item_passed_@item.id",
+              "value": "@item.id passed: @item.passed",
+              "_translations": {
+                "value": {}
               },
-              {
-                "fullExpression": "article_@local.module_id@local.join@item.id",
-                "matchedExpression": "@local.join",
-                "type": "local",
-                "fieldName": "join"
-              },
-              {
-                "fullExpression": "article_@local.module_id@local.join@item.id",
-                "matchedExpression": "@item.id",
-                "type": "item",
-                "fieldName": "id"
-              }
-            ],
-            "action_list": {
-              "2": {
-                "_raw": [
+              "condition": false,
+              "_nested_name": "find_first_not_passed.continue_loop_@item.id.test_item_passed_@item.id",
+              "_dynamicFields": {
+                "name": [
                   {
-                    "fullExpression": "uncompleted | set_item | _index: @item._index - 1, passed: false",
-                    "matchedExpression": "@item._index",
+                    "fullExpression": "test_item_passed_@item.id",
+                    "matchedExpression": "@item.id",
                     "type": "item",
-                    "fieldName": "_index"
+                    "fieldName": "id"
                   }
                 ],
-                "_cleaned": [
+                "value": [
                   {
-                    "fullExpression": "uncompleted | set_item | _index: @item._index - 1, passed: false",
-                    "matchedExpression": "@item._index",
+                    "fullExpression": "@item.id passed: @item.passed",
+                    "matchedExpression": "@item.id",
                     "type": "item",
-                    "fieldName": "_index"
+                    "fieldName": "id"
+                  },
+                  {
+                    "fullExpression": "@item.id passed: @item.passed",
+                    "matchedExpression": "@item.passed",
+                    "type": "item",
+                    "fieldName": "passed"
                   }
                 ],
-                "params": {
-                  "_index": [
-                    {
-                      "fullExpression": "@item._index - 1",
-                      "matchedExpression": "@item._index",
-                      "type": "item",
-                      "fieldName": "_index"
-                    }
-                  ]
-                }
-              }
-            },
-            "condition": [
-              {
-                "fullExpression": "(!@item.passed) && (!@item._last)",
-                "matchedExpression": "!@item.passed",
-                "type": "item",
-                "fieldName": "passed"
-              },
-              {
-                "fullExpression": "(!@item.passed) && (!@item._last)",
-                "matchedExpression": "!@item._last",
-                "type": "item",
-                "fieldName": "_last"
-              }
-            ],
-            "_nested_name": [
-              {
-                "fullExpression": "data_items.article_@item._index",
-                "matchedExpression": "@item._index",
-                "type": "item",
-                "fieldName": "_index"
-              }
-            ]
-          },
-          "_dynamicDependencies": {
-            "@item._index": [
-              "name",
-              "action_list.2._raw",
-              "action_list.2._cleaned",
-              "action_list.2.params._index",
-              "_nested_name"
-            ],
-            "@local.module_id": [
-              "value"
-            ],
-            "@local.join": [
-              "value"
-            ],
-            "@item.id": [
-              "value"
-            ],
-            "!@item.passed": [
-              "condition"
-            ],
-            "!@item._last": [
-              "condition"
-            ]
-          }
-        },
-        {
-          "type": "template",
-          "name": "article_last_@item._index",
-          "value": "article_@local.module_id@local.join@item.id",
-          "action_list": [
-            {
-              "trigger": "completed",
-              "action_id": "set_item",
-              "args": [],
-              "_raw": "completed | set_item | passed:true",
-              "_cleaned": "completed | set_item | passed:true",
-              "params": {
-                "passed": true
-              }
-            },
-            {
-              "trigger": "completed",
-              "action_id": "set_item",
-              "args": [],
-              "_raw": "completed | set_item | completed: true",
-              "_cleaned": "completed | set_item | completed: true",
-              "params": {
-                "completed": true
-              }
-            },
-            {
-              "trigger": "completed",
-              "action_id": "set_local",
-              "args": [
-                "category_id",
-                "@local.next_category"
-              ],
-              "_raw": "completed | set_local: category_id: @local.next_category",
-              "_cleaned": "completed | set_local: category_id: @local.next_category"
-            },
-            {
-              "trigger": "uncompleted",
-              "action_id": "set_item",
-              "args": [],
-              "_raw": "uncompleted | set_item | _index: @item._index - 1, passed: false",
-              "_cleaned": "uncompleted | set_item | _index: @item._index - 1, passed: false",
-              "params": {
-                "_index": "@item._index - 1",
-                "passed": false
-              }
-            }
-          ],
-          "exclude_from_translation": true,
-          "condition": "(!@item.passed) && @item._last",
-          "rows": [],
-          "_nested_name": "data_items.article_last_@item._index",
-          "_dynamicFields": {
-            "name": [
-              {
-                "fullExpression": "article_last_@item._index",
-                "matchedExpression": "@item._index",
-                "type": "item",
-                "fieldName": "_index"
-              }
-            ],
-            "value": [
-              {
-                "fullExpression": "article_@local.module_id@local.join@item.id",
-                "matchedExpression": "@local.module_id",
-                "type": "local",
-                "fieldName": "module_id"
-              },
-              {
-                "fullExpression": "article_@local.module_id@local.join@item.id",
-                "matchedExpression": "@local.join",
-                "type": "local",
-                "fieldName": "join"
-              },
-              {
-                "fullExpression": "article_@local.module_id@local.join@item.id",
-                "matchedExpression": "@item.id",
-                "type": "item",
-                "fieldName": "id"
-              }
-            ],
-            "action_list": {
-              "2": {
-                "args": {
-                  "1": [
-                    {
-                      "fullExpression": "@local.next_category",
-                      "matchedExpression": "@local.next_category",
-                      "type": "local",
-                      "fieldName": "next_category"
-                    }
-                  ]
-                },
-                "_raw": [
+                "_nested_name": [
                   {
-                    "fullExpression": "completed | set_local: category_id: @local.next_category",
-                    "matchedExpression": "@local.next_category",
-                    "type": "local",
-                    "fieldName": "next_category"
-                  }
-                ],
-                "_cleaned": [
+                    "fullExpression": "find_first_not_passed.continue_loop_@item.id.test_item_passed_@item.id",
+                    "matchedExpression": "@item.id.test_item_passed_",
+                    "type": "item",
+                    "fieldName": "id"
+                  },
                   {
-                    "fullExpression": "completed | set_local: category_id: @local.next_category",
-                    "matchedExpression": "@local.next_category",
-                    "type": "local",
-                    "fieldName": "next_category"
+                    "fullExpression": "find_first_not_passed.continue_loop_@item.id.test_item_passed_@item.id",
+                    "matchedExpression": "@item.id",
+                    "type": "item",
+                    "fieldName": "id"
                   }
                 ]
               },
-              "3": {
-                "_raw": [
-                  {
-                    "fullExpression": "uncompleted | set_item | _index: @item._index - 1, passed: false",
-                    "matchedExpression": "@item._index",
-                    "type": "item",
-                    "fieldName": "_index"
-                  }
+              "_dynamicDependencies": {
+                "@item.id": [
+                  "name",
+                  "value",
+                  "_nested_name"
                 ],
-                "_cleaned": [
-                  {
-                    "fullExpression": "uncompleted | set_item | _index: @item._index - 1, passed: false",
-                    "matchedExpression": "@item._index",
-                    "type": "item",
-                    "fieldName": "_index"
-                  }
+                "@item.passed": [
+                  "value"
                 ],
-                "params": {
-                  "_index": [
-                    {
-                      "fullExpression": "@item._index - 1",
-                      "matchedExpression": "@item._index",
-                      "type": "item",
-                      "fieldName": "_index"
-                    }
-                  ]
-                }
+                "@item.id.test_item_passed_": [
+                  "_nested_name"
+                ]
               }
             },
+            {
+              "type": "display_group",
+              "name": "for_first_not_passed_@item.id",
+              "parameter_list": {
+                "style": "column"
+              },
+              "condition": "!@item.passed",
+              "rows": [
+                {
+                  "name": "stop_loop",
+                  "value": true,
+                  "type": "set_variable",
+                  "_nested_name": "find_first_not_passed.continue_loop_@item.id.for_first_not_passed_@item.id.stop_loop",
+                  "_dynamicFields": {
+                    "_nested_name": [
+                      {
+                        "fullExpression": "find_first_not_passed.continue_loop_@item.id.for_first_not_passed_@item.id.stop_loop",
+                        "matchedExpression": "@item.id.for_first_not_passed_",
+                        "type": "item",
+                        "fieldName": "id"
+                      },
+                      {
+                        "fullExpression": "find_first_not_passed.continue_loop_@item.id.for_first_not_passed_@item.id.stop_loop",
+                        "matchedExpression": "@item.id.stop_loop",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@item.id.for_first_not_passed_": [
+                      "_nested_name"
+                    ],
+                    "@item.id.stop_loop": [
+                      "_nested_name"
+                    ]
+                  }
+                },
+                {
+                  "type": "text",
+                  "name": "test_local_var",
+                  "value": "@local.stop_loop",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "_nested_name": "find_first_not_passed.continue_loop_@item.id.for_first_not_passed_@item.id.test_local_var",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@local.stop_loop",
+                        "matchedExpression": "@local.stop_loop",
+                        "type": "local",
+                        "fieldName": "stop_loop"
+                      }
+                    ],
+                    "_nested_name": [
+                      {
+                        "fullExpression": "find_first_not_passed.continue_loop_@item.id.for_first_not_passed_@item.id.test_local_var",
+                        "matchedExpression": "@item.id.for_first_not_passed_",
+                        "type": "item",
+                        "fieldName": "id"
+                      },
+                      {
+                        "fullExpression": "find_first_not_passed.continue_loop_@item.id.for_first_not_passed_@item.id.test_local_var",
+                        "matchedExpression": "@item.id.test_local_var",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@local.stop_loop": [
+                      "value"
+                    ],
+                    "@item.id.for_first_not_passed_": [
+                      "_nested_name"
+                    ],
+                    "@item.id.test_local_var": [
+                      "_nested_name"
+                    ]
+                  }
+                },
+                {
+                  "type": "text",
+                  "name": "test_item_completed",
+                  "value": "@item.id completed: @item.completed",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "_nested_name": "find_first_not_passed.continue_loop_@item.id.for_first_not_passed_@item.id.test_item_completed",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@item.id completed: @item.completed",
+                        "matchedExpression": "@item.id",
+                        "type": "item",
+                        "fieldName": "id"
+                      },
+                      {
+                        "fullExpression": "@item.id completed: @item.completed",
+                        "matchedExpression": "@item.completed",
+                        "type": "item",
+                        "fieldName": "completed"
+                      }
+                    ],
+                    "_nested_name": [
+                      {
+                        "fullExpression": "find_first_not_passed.continue_loop_@item.id.for_first_not_passed_@item.id.test_item_completed",
+                        "matchedExpression": "@item.id.for_first_not_passed_",
+                        "type": "item",
+                        "fieldName": "id"
+                      },
+                      {
+                        "fullExpression": "find_first_not_passed.continue_loop_@item.id.for_first_not_passed_@item.id.test_item_completed",
+                        "matchedExpression": "@item.id.test_item_completed",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@item.id": [
+                      "value"
+                    ],
+                    "@item.completed": [
+                      "value"
+                    ],
+                    "@item.id.for_first_not_passed_": [
+                      "_nested_name"
+                    ],
+                    "@item.id.test_item_completed": [
+                      "_nested_name"
+                    ]
+                  }
+                },
+                {
+                  "type": "text",
+                  "name": "test_item",
+                  "value": "test item: @item.id",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "condition": false,
+                  "_nested_name": "find_first_not_passed.continue_loop_@item.id.for_first_not_passed_@item.id.test_item",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "test item: @item.id",
+                        "matchedExpression": "@item.id",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ],
+                    "_nested_name": [
+                      {
+                        "fullExpression": "find_first_not_passed.continue_loop_@item.id.for_first_not_passed_@item.id.test_item",
+                        "matchedExpression": "@item.id.for_first_not_passed_",
+                        "type": "item",
+                        "fieldName": "id"
+                      },
+                      {
+                        "fullExpression": "find_first_not_passed.continue_loop_@item.id.for_first_not_passed_@item.id.test_item",
+                        "matchedExpression": "@item.id.test_item",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@item.id": [
+                      "value"
+                    ],
+                    "@item.id.for_first_not_passed_": [
+                      "_nested_name"
+                    ],
+                    "@item.id.test_item": [
+                      "_nested_name"
+                    ]
+                  }
+                },
+                {
+                  "type": "text",
+                  "name": "test_item_last",
+                  "value": "@item.id last: @item._last",
+                  "_translations": {
+                    "value": {}
+                  },
+                  "_nested_name": "find_first_not_passed.continue_loop_@item.id.for_first_not_passed_@item.id.test_item_last",
+                  "_dynamicFields": {
+                    "value": [
+                      {
+                        "fullExpression": "@item.id last: @item._last",
+                        "matchedExpression": "@item.id",
+                        "type": "item",
+                        "fieldName": "id"
+                      },
+                      {
+                        "fullExpression": "@item.id last: @item._last",
+                        "matchedExpression": "@item._last",
+                        "type": "item",
+                        "fieldName": "_last"
+                      }
+                    ],
+                    "_nested_name": [
+                      {
+                        "fullExpression": "find_first_not_passed.continue_loop_@item.id.for_first_not_passed_@item.id.test_item_last",
+                        "matchedExpression": "@item.id.for_first_not_passed_",
+                        "type": "item",
+                        "fieldName": "id"
+                      },
+                      {
+                        "fullExpression": "find_first_not_passed.continue_loop_@item.id.for_first_not_passed_@item.id.test_item_last",
+                        "matchedExpression": "@item.id.test_item_last",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@item.id": [
+                      "value"
+                    ],
+                    "@item._last": [
+                      "value"
+                    ],
+                    "@item.id.for_first_not_passed_": [
+                      "_nested_name"
+                    ],
+                    "@item.id.test_item_last": [
+                      "_nested_name"
+                    ]
+                  }
+                },
+                {
+                  "type": "template",
+                  "name": "article_@item._index",
+                  "value": "article_@local.module_id@local.join@item.id",
+                  "action_list": [
+                    {
+                      "trigger": "completed",
+                      "action_id": "set_item",
+                      "args": [],
+                      "_raw": "completed | set_item | passed: true",
+                      "_cleaned": "completed | set_item | passed: true",
+                      "params": {
+                        "passed": true
+                      }
+                    },
+                    {
+                      "trigger": "completed",
+                      "action_id": "set_item",
+                      "args": [],
+                      "_raw": "completed | set_item | completed: true",
+                      "_cleaned": "completed | set_item | completed: true",
+                      "params": {
+                        "completed": true
+                      }
+                    },
+                    {
+                      "trigger": "uncompleted",
+                      "action_id": "set_item",
+                      "args": [],
+                      "_raw": "uncompleted | set_item | _index: @item._index - 1, passed: false",
+                      "_cleaned": "uncompleted | set_item | _index: @item._index - 1, passed: false",
+                      "params": {
+                        "_index": "@item._index - 1",
+                        "passed": false
+                      }
+                    }
+                  ],
+                  "exclude_from_translation": true,
+                  "rows": [],
+                  "_nested_name": "find_first_not_passed.continue_loop_@item.id.for_first_not_passed_@item.id.article_@item._index",
+                  "_dynamicFields": {
+                    "name": [
+                      {
+                        "fullExpression": "article_@item._index",
+                        "matchedExpression": "@item._index",
+                        "type": "item",
+                        "fieldName": "_index"
+                      }
+                    ],
+                    "value": [
+                      {
+                        "fullExpression": "article_@local.module_id@local.join@item.id",
+                        "matchedExpression": "@local.module_id",
+                        "type": "local",
+                        "fieldName": "module_id"
+                      },
+                      {
+                        "fullExpression": "article_@local.module_id@local.join@item.id",
+                        "matchedExpression": "@local.join",
+                        "type": "local",
+                        "fieldName": "join"
+                      },
+                      {
+                        "fullExpression": "article_@local.module_id@local.join@item.id",
+                        "matchedExpression": "@item.id",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ],
+                    "action_list": {
+                      "2": {
+                        "_raw": [
+                          {
+                            "fullExpression": "uncompleted | set_item | _index: @item._index - 1, passed: false",
+                            "matchedExpression": "@item._index",
+                            "type": "item",
+                            "fieldName": "_index"
+                          }
+                        ],
+                        "_cleaned": [
+                          {
+                            "fullExpression": "uncompleted | set_item | _index: @item._index - 1, passed: false",
+                            "matchedExpression": "@item._index",
+                            "type": "item",
+                            "fieldName": "_index"
+                          }
+                        ],
+                        "params": {
+                          "_index": [
+                            {
+                              "fullExpression": "@item._index - 1",
+                              "matchedExpression": "@item._index",
+                              "type": "item",
+                              "fieldName": "_index"
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    "_nested_name": [
+                      {
+                        "fullExpression": "find_first_not_passed.continue_loop_@item.id.for_first_not_passed_@item.id.article_@item._index",
+                        "matchedExpression": "@item.id.for_first_not_passed_",
+                        "type": "item",
+                        "fieldName": "id"
+                      },
+                      {
+                        "fullExpression": "find_first_not_passed.continue_loop_@item.id.for_first_not_passed_@item.id.article_@item._index",
+                        "matchedExpression": "@item.id.article_",
+                        "type": "item",
+                        "fieldName": "id"
+                      },
+                      {
+                        "fullExpression": "find_first_not_passed.continue_loop_@item.id.for_first_not_passed_@item.id.article_@item._index",
+                        "matchedExpression": "@item._index",
+                        "type": "item",
+                        "fieldName": "_index"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@item._index": [
+                      "name",
+                      "action_list.2._raw",
+                      "action_list.2._cleaned",
+                      "action_list.2.params._index",
+                      "_nested_name"
+                    ],
+                    "@local.module_id": [
+                      "value"
+                    ],
+                    "@local.join": [
+                      "value"
+                    ],
+                    "@item.id": [
+                      "value"
+                    ],
+                    "@item.id.for_first_not_passed_": [
+                      "_nested_name"
+                    ],
+                    "@item.id.article_": [
+                      "_nested_name"
+                    ]
+                  }
+                },
+                {
+                  "type": "template",
+                  "name": "article_last_@item._index",
+                  "value": "article_@local.module_id@local.join@item.id",
+                  "action_list": [
+                    {
+                      "trigger": "completed",
+                      "action_id": "set_item",
+                      "args": [],
+                      "_raw": "completed | set_item | passed:true",
+                      "_cleaned": "completed | set_item | passed:true",
+                      "params": {
+                        "passed": true
+                      }
+                    },
+                    {
+                      "trigger": "completed",
+                      "action_id": "set_item",
+                      "args": [],
+                      "_raw": "completed | set_item | completed: true",
+                      "_cleaned": "completed | set_item | completed: true",
+                      "params": {
+                        "completed": true
+                      }
+                    },
+                    {
+                      "trigger": "completed",
+                      "action_id": "set_local",
+                      "args": [
+                        "category_id",
+                        "@local.next_category"
+                      ],
+                      "_raw": "completed | set_local: category_id: @local.next_category",
+                      "_cleaned": "completed | set_local: category_id: @local.next_category"
+                    },
+                    {
+                      "trigger": "uncompleted",
+                      "action_id": "set_item",
+                      "args": [],
+                      "_raw": "uncompleted | set_item | _index: @item._index - 1, passed: false",
+                      "_cleaned": "uncompleted | set_item | _index: @item._index - 1, passed: false",
+                      "params": {
+                        "_index": "@item._index - 1",
+                        "passed": false
+                      }
+                    }
+                  ],
+                  "exclude_from_translation": true,
+                  "condition": false,
+                  "rows": [],
+                  "_nested_name": "find_first_not_passed.continue_loop_@item.id.for_first_not_passed_@item.id.article_last_@item._index",
+                  "_dynamicFields": {
+                    "name": [
+                      {
+                        "fullExpression": "article_last_@item._index",
+                        "matchedExpression": "@item._index",
+                        "type": "item",
+                        "fieldName": "_index"
+                      }
+                    ],
+                    "value": [
+                      {
+                        "fullExpression": "article_@local.module_id@local.join@item.id",
+                        "matchedExpression": "@local.module_id",
+                        "type": "local",
+                        "fieldName": "module_id"
+                      },
+                      {
+                        "fullExpression": "article_@local.module_id@local.join@item.id",
+                        "matchedExpression": "@local.join",
+                        "type": "local",
+                        "fieldName": "join"
+                      },
+                      {
+                        "fullExpression": "article_@local.module_id@local.join@item.id",
+                        "matchedExpression": "@item.id",
+                        "type": "item",
+                        "fieldName": "id"
+                      }
+                    ],
+                    "action_list": {
+                      "2": {
+                        "args": {
+                          "1": [
+                            {
+                              "fullExpression": "@local.next_category",
+                              "matchedExpression": "@local.next_category",
+                              "type": "local",
+                              "fieldName": "next_category"
+                            }
+                          ]
+                        },
+                        "_raw": [
+                          {
+                            "fullExpression": "completed | set_local: category_id: @local.next_category",
+                            "matchedExpression": "@local.next_category",
+                            "type": "local",
+                            "fieldName": "next_category"
+                          }
+                        ],
+                        "_cleaned": [
+                          {
+                            "fullExpression": "completed | set_local: category_id: @local.next_category",
+                            "matchedExpression": "@local.next_category",
+                            "type": "local",
+                            "fieldName": "next_category"
+                          }
+                        ]
+                      },
+                      "3": {
+                        "_raw": [
+                          {
+                            "fullExpression": "uncompleted | set_item | _index: @item._index - 1, passed: false",
+                            "matchedExpression": "@item._index",
+                            "type": "item",
+                            "fieldName": "_index"
+                          }
+                        ],
+                        "_cleaned": [
+                          {
+                            "fullExpression": "uncompleted | set_item | _index: @item._index - 1, passed: false",
+                            "matchedExpression": "@item._index",
+                            "type": "item",
+                            "fieldName": "_index"
+                          }
+                        ],
+                        "params": {
+                          "_index": [
+                            {
+                              "fullExpression": "@item._index - 1",
+                              "matchedExpression": "@item._index",
+                              "type": "item",
+                              "fieldName": "_index"
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    "_nested_name": [
+                      {
+                        "fullExpression": "find_first_not_passed.continue_loop_@item.id.for_first_not_passed_@item.id.article_last_@item._index",
+                        "matchedExpression": "@item.id.for_first_not_passed_",
+                        "type": "item",
+                        "fieldName": "id"
+                      },
+                      {
+                        "fullExpression": "find_first_not_passed.continue_loop_@item.id.for_first_not_passed_@item.id.article_last_@item._index",
+                        "matchedExpression": "@item.id.article_last_",
+                        "type": "item",
+                        "fieldName": "id"
+                      },
+                      {
+                        "fullExpression": "find_first_not_passed.continue_loop_@item.id.for_first_not_passed_@item.id.article_last_@item._index",
+                        "matchedExpression": "@item._index",
+                        "type": "item",
+                        "fieldName": "_index"
+                      }
+                    ]
+                  },
+                  "_dynamicDependencies": {
+                    "@item._index": [
+                      "name",
+                      "action_list.3._raw",
+                      "action_list.3._cleaned",
+                      "action_list.3.params._index",
+                      "_nested_name"
+                    ],
+                    "@local.module_id": [
+                      "value"
+                    ],
+                    "@local.join": [
+                      "value"
+                    ],
+                    "@item.id": [
+                      "value"
+                    ],
+                    "@local.next_category": [
+                      "action_list.2.args.1",
+                      "action_list.2._raw",
+                      "action_list.2._cleaned"
+                    ],
+                    "@item.id.for_first_not_passed_": [
+                      "_nested_name"
+                    ],
+                    "@item.id.article_last_": [
+                      "_nested_name"
+                    ]
+                  }
+                }
+              ],
+              "_nested_name": "find_first_not_passed.continue_loop_@item.id.for_first_not_passed_@item.id",
+              "_dynamicFields": {
+                "name": [
+                  {
+                    "fullExpression": "for_first_not_passed_@item.id",
+                    "matchedExpression": "@item.id",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
+                ],
+                "condition": [
+                  {
+                    "fullExpression": "!@item.passed",
+                    "matchedExpression": "!@item.passed",
+                    "type": "item",
+                    "fieldName": "passed"
+                  }
+                ],
+                "_nested_name": [
+                  {
+                    "fullExpression": "find_first_not_passed.continue_loop_@item.id.for_first_not_passed_@item.id",
+                    "matchedExpression": "@item.id.for_first_not_passed_",
+                    "type": "item",
+                    "fieldName": "id"
+                  },
+                  {
+                    "fullExpression": "find_first_not_passed.continue_loop_@item.id.for_first_not_passed_@item.id",
+                    "matchedExpression": "@item.id",
+                    "type": "item",
+                    "fieldName": "id"
+                  }
+                ]
+              },
+              "_dynamicDependencies": {
+                "@item.id": [
+                  "name",
+                  "_nested_name"
+                ],
+                "!@item.passed": [
+                  "condition"
+                ],
+                "@item.id.for_first_not_passed_": [
+                  "_nested_name"
+                ]
+              }
+            }
+          ],
+          "_nested_name": "find_first_not_passed.continue_loop_@item.id",
+          "_dynamicFields": {
+            "name": [
+              {
+                "fullExpression": "continue_loop_@item.id",
+                "matchedExpression": "@item.id",
+                "type": "item",
+                "fieldName": "id"
+              }
+            ],
             "condition": [
               {
-                "fullExpression": "(!@item.passed) && @item._last",
-                "matchedExpression": "!@item.passed",
-                "type": "item",
-                "fieldName": "passed"
-              },
-              {
-                "fullExpression": "(!@item.passed) && @item._last",
-                "matchedExpression": "@item._last",
-                "type": "item",
-                "fieldName": "_last"
+                "fullExpression": "!!!@local.stop_loop",
+                "matchedExpression": "!@local.stop_loop",
+                "type": "local",
+                "fieldName": "stop_loop"
               }
             ],
             "_nested_name": [
               {
-                "fullExpression": "data_items.article_last_@item._index",
-                "matchedExpression": "@item._index",
+                "fullExpression": "find_first_not_passed.continue_loop_@item.id",
+                "matchedExpression": "@item.id",
                 "type": "item",
-                "fieldName": "_index"
+                "fieldName": "id"
               }
             ]
           },
           "_dynamicDependencies": {
-            "@item._index": [
+            "@item.id": [
               "name",
-              "action_list.3._raw",
-              "action_list.3._cleaned",
-              "action_list.3.params._index",
               "_nested_name"
             ],
-            "@local.module_id": [
-              "value"
-            ],
-            "@local.join": [
-              "value"
-            ],
-            "@item.id": [
-              "value"
-            ],
-            "@local.next_category": [
-              "action_list.2.args.1",
-              "action_list.2._raw",
-              "action_list.2._cleaned"
-            ],
-            "!@item.passed": [
-              "condition"
-            ],
-            "@item._last": [
+            "!@local.stop_loop": [
               "condition"
             ]
           }
         }
       ],
-      "_nested_name": "data_items",
+      "_nested_name": "find_first_not_passed",
       "_dynamicFields": {
         "value": [
           {

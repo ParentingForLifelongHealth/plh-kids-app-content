@@ -19,8 +19,8 @@
       "section_3_text": "Pay attention to what your child is doing. Be curious about what they might be thinking and feeling. Talk about that.",
       "section_3_button_text": "More info",
       "section_3_extra_text": "This shows your child you are interested and helps your child feel connected to you.",
-      "completed": "FALSE",
-      "passed": "FALSE"
+      "completed": false,
+      "passed": false
     }
   ]
 }
