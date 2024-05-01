@@ -7,8 +7,8 @@
       "id": "intro_1",
       "category_id": "intro",
       "text_1": "This week, we are focusing on the topic of **CONNECTION**.\n\nConnecting with your child and spending quality time together makes a big difference to their development.",
-      "completed": "FALSE",
-      "passed": "FALSE"
+      "completed": false,
+      "passed": false
     },
     {
       "id": "intro_2",
@@ -20,8 +20,8 @@
       "quiz_1_feedback_1": "Many people feel this way. We have some easy activities that could help.",
       "quiz_1_option_2_text": "No",
       "quiz_1_feedback_2": "It’s great that you make time to connect with your child. We have some extra ideas you might like.",
-      "completed": "FALSE",
-      "passed": "FALSE"
+      "completed": false,
+      "passed": false
     }
   ]
 }
