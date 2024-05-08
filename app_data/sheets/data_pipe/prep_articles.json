@@ -6,8 +6,7 @@
     {
       "operation": "append_columns",
       "args_list": [
-        "completed: FALSE",
-        "passed: FALSE"
+        "completed: FALSE"
       ],
       "input_source": "test_articles",
       "output_target": "prepped_test_articles"
