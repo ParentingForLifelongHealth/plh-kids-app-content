@@ -1,5 +1,5 @@
 {
-  "flow_name": "category_test_intro",
+  "flow_name": "category_test_intro_test",
   "flow_subtype": "generated",
   "flow_type": "template",
   "rows": [
@@ -30,7 +30,7 @@
       "rows": [
         {
           "name": "category_id",
-          "value": "intro",
+          "value": "intro_test",
           "_translations": {
             "value": {}
           },

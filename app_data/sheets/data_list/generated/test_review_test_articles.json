@@ -1,11 +1,11 @@
 {
-  "flow_name": "test_review_articles",
+  "flow_name": "test_review_test_articles",
   "flow_subtype": "generated",
   "flow_type": "data_list",
   "rows": [
     {
       "id": "review_1",
-      "category_id": "review",
+      "category_id": "review_test",
       "text_1": "Here’s how to **CONNECT** with your child using a quick and easy daily activity:",
       "section_1_title": "**MINIMISE DISTRACTIONS**",
       "section_1_text": "This helps you to give your full attention to your child.",

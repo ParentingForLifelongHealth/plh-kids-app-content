@@ -2,8 +2,8 @@ import { generateDeploymentConfig } from "scripts";
 const config = generateDeploymentConfig("plh_kids");
 
 config.google_drive = {
-  sheets_folder_ids: ["1Y8uC9-rqQtsjQgUfeX9qp-vNzsFDUQFU"],
-  assets_folder_ids: ["1abaL1QGd33NqqLoKuo2t9fVWKmh5ouM9"],
+  sheets_folder_ids: ["1Y8uC9-rqQtsjQgUfeX9qp-vNzsFDUQFU","14_viyBqAiJgMRfQ6L7MoiNgcpVYB4e5S"],
+  assets_folder_ids: ["1abaL1QGd33NqqLoKuo2t9fVWKmh5ouM9","1PNjuaEaRzat39LhDg1kgrjHXQ-cwqiG9"],
 };
 
 config.android = {
@@ -15,7 +15,7 @@ config.android = {
 
 config.git = {
   content_repo: "https://github.com/IDEMSInternational/plh-kids-app-content.git",
-  content_tag_latest: "1.1.15",
+  content_tag_latest: "1.1.16",
 };
 
 config.api.db_name = "plh_kids"

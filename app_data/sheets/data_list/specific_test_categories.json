@@ -5,7 +5,7 @@
   "status": "released",
   "rows": [
     {
-      "id": "intro",
+      "id": "intro_test",
       "title": "Introduction",
       "icon_asset": "images/icons/magnifying_glass.svg"
     },
@@ -15,12 +15,12 @@
       "icon_asset": "images/icons/picture_book.svg"
     },
     {
-      "id": "review",
+      "id": "review_test",
       "title": "Review",
       "icon_asset": "images/icons/thought_bubble.svg"
     },
     {
-      "id": "home_activity",
+      "id": "home_activity_test",
       "title": "Home Activity",
       "icon_asset": "images/icons/parent_child_heart.svg"
     }
