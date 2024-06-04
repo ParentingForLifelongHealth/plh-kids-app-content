@@ -1,5 +1,5 @@
 {
-  "flow_name": "category_test_home_activity",
+  "flow_name": "category_test_review_test",
   "flow_subtype": "generated",
   "flow_type": "template",
   "rows": [
@@ -30,7 +30,7 @@
       "rows": [
         {
           "name": "category_id",
-          "value": "home_activity",
+          "value": "review_test",
           "_translations": {
             "value": {}
           },

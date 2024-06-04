@@ -30,7 +30,7 @@
       }
     },
     {
-      "id": "intro",
+      "id": "intro_test",
       "icon_asset": "images/icons/magnifying_glass.svg",
       "title": "Introduction",
       "_translations": {
@@ -46,7 +46,7 @@
       }
     },
     {
-      "id": "review",
+      "id": "review_test",
       "icon_asset": "images/icons/thought_bubble.svg",
       "title": "Review",
       "_translations": {
@@ -54,7 +54,7 @@
       }
     },
     {
-      "id": "home_activity",
+      "id": "home_activity_test",
       "icon_asset": "images/icons/parent_child_heart.svg",
       "title": "Home Activity",
       "_translations": {

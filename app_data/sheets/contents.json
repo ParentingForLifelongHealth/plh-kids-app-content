@@ -36,13 +36,13 @@
       "flow_subtype": "generated",
       "flow_type": "data_list"
     },
-    "test_home_activity_articles": {
-      "flow_name": "test_home_activity_articles",
+    "test_home_activity_test_articles": {
+      "flow_name": "test_home_activity_test_articles",
       "flow_subtype": "generated",
       "flow_type": "data_list"
     },
-    "test_intro_articles": {
-      "flow_name": "test_intro_articles",
+    "test_intro_test_articles": {
+      "flow_name": "test_intro_test_articles",
       "flow_subtype": "generated",
       "flow_type": "data_list"
     },
@@ -51,8 +51,8 @@
       "flow_subtype": "generated",
       "flow_type": "data_list"
     },
-    "test_review_articles": {
-      "flow_name": "test_review_articles",
+    "test_review_test_articles": {
+      "flow_name": "test_review_test_articles",
       "flow_subtype": "generated",
       "flow_type": "data_list"
     },
@@ -105,13 +105,13 @@
       "flow_name": "concat_categories",
       "_xlsxPath": "data/modules/test modules_data_pipes.xlsx"
     },
-    "test_home_activity_articles": {
-      "flow_name": "test_home_activity_articles",
+    "test_home_activity_test_articles": {
+      "flow_name": "test_home_activity_test_articles",
       "flow_subtype": "generated",
       "flow_type": "data_pipe"
     },
-    "test_intro_articles": {
-      "flow_name": "test_intro_articles",
+    "test_intro_test_articles": {
+      "flow_name": "test_intro_test_articles",
       "flow_subtype": "generated",
       "flow_type": "data_pipe"
     },
@@ -120,8 +120,8 @@
       "flow_subtype": "generated",
       "flow_type": "data_pipe"
     },
-    "test_review_articles": {
-      "flow_name": "test_review_articles",
+    "test_review_test_articles": {
+      "flow_name": "test_review_test_articles",
       "flow_subtype": "generated",
       "flow_type": "data_pipe"
     },
@@ -163,7 +163,7 @@
         "output_flow_type": "template",
         "output_flow_subtype": "generated"
       },
-      "_xlsxPath": "templates/modules/check_in.xlsx"
+      "_xlsxPath": "templates/modules/check_in article_generator.xlsx"
     },
     "gen_module": {
       "flow_type": "generator",
@@ -251,7 +251,7 @@
         "output_flow_type": "template",
         "output_flow_subtype": "generated"
       },
-      "_xlsxPath": "templates/modules/article_generators.xlsx"
+      "_xlsxPath": "templates/test article_generators.xlsx"
     },
     "test_category_gen": {
       "flow_type": "generator",
@@ -558,13 +558,13 @@
       "flow_subtype": "generated",
       "flow_type": "template"
     },
-    "category_test_home_activity": {
-      "flow_name": "category_test_home_activity",
+    "category_test_home_activity_test": {
+      "flow_name": "category_test_home_activity_test",
       "flow_subtype": "generated",
       "flow_type": "template"
     },
-    "category_test_intro": {
-      "flow_name": "category_test_intro",
+    "category_test_intro_test": {
+      "flow_name": "category_test_intro_test",
       "flow_subtype": "generated",
       "flow_type": "template"
     },
@@ -578,8 +578,8 @@
       "flow_subtype": "generated",
       "flow_type": "template"
     },
-    "category_test_review": {
-      "flow_name": "category_test_review",
+    "category_test_review_test": {
+      "flow_name": "category_test_review_test",
       "flow_subtype": "generated",
       "flow_type": "template"
     },

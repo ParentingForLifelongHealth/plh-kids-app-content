@@ -1,15 +1,15 @@
 {
-  "flow_name": "test_intro_articles",
+  "flow_name": "test_intro_test_articles",
   "flow_subtype": "generated",
   "flow_type": "data_pipe",
   "rows": [
     {
       "operation": "filter",
       "args_list": [
-        "category_id == \"intro\""
+        "category_id == \"intro_test\""
       ],
       "input_source": "prepped_test_articles",
-      "output_target": "test_intro_articles"
+      "output_target": "test_intro_test_articles"
     }
   ]
 }
