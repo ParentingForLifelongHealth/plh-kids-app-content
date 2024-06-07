@@ -10,6 +10,22 @@
       ],
       "input_source": "test_articles",
       "output_target": "prepped_test_articles"
+    },
+    {
+      "operation": "append_columns",
+      "args_list": [
+        "category_id: check_in"
+      ],
+      "input_source": "check_in",
+      "output_target": "prepped_check_in"
+    },
+    {
+      "operation": "append_columns",
+      "args_list": [
+        "category_id: relax"
+      ],
+      "input_source": "relax",
+      "output_target": "prepped_relax"
     }
   ],
   "_xlsxPath": "data/modules/test modules_data_pipes.xlsx"

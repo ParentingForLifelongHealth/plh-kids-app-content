@@ -1,8 +1,7 @@
 {
+  "flow_name": "prepped_check_in",
+  "flow_subtype": "generated",
   "flow_type": "data_list",
-  "flow_name": "check_in",
-  "data_list_name": "check_in",
-  "status": "released",
   "rows": [
     {
       "id": "check_in_1",
@@ -53,7 +52,8 @@
       "quiz_1_question": "How are you feeling today?",
       "quiz_1_option_1_text": "Happy",
       "quiz_1_option_2_text": "Okay",
-      "quiz_1_option_3_text": "Sad"
+      "quiz_1_option_3_text": "Sad",
+      "category_id": "check_in"
     },
     {
       "id": "check_in_2",
@@ -104,7 +104,8 @@
       "quiz_1_question": "How are you feeling today?",
       "quiz_1_option_1_text": "Happy",
       "quiz_1_option_2_text": "Okay",
-      "quiz_1_option_3_text": "Sad"
+      "quiz_1_option_3_text": "Sad",
+      "category_id": "check_in"
     },
     {
       "id": "check_in_3",
@@ -155,7 +156,8 @@
       "quiz_1_question": "How are you feeling today?",
       "quiz_1_option_1_text": "Happy",
       "quiz_1_option_2_text": "Okay",
-      "quiz_1_option_3_text": "Sad"
+      "quiz_1_option_3_text": "Sad",
+      "category_id": "check_in"
     },
     {
       "id": "check_in_4",
@@ -206,7 +208,8 @@
       "quiz_1_question": "How are you feeling today?",
       "quiz_1_option_1_text": "Happy",
       "quiz_1_option_2_text": "Okay",
-      "quiz_1_option_3_text": "Sad"
+      "quiz_1_option_3_text": "Sad",
+      "category_id": "check_in"
     },
     {
       "id": "check_in_5",
@@ -257,7 +260,8 @@
       "quiz_1_question": "How are you feeling today?",
       "quiz_1_option_1_text": "Happy",
       "quiz_1_option_2_text": "Okay",
-      "quiz_1_option_3_text": "Sad"
+      "quiz_1_option_3_text": "Sad",
+      "category_id": "check_in"
     },
     {
       "id": "check_in_6",
@@ -308,7 +312,8 @@
       "quiz_1_question": "How are you feeling today?",
       "quiz_1_option_1_text": "Happy",
       "quiz_1_option_2_text": "Okay",
-      "quiz_1_option_3_text": "Sad"
+      "quiz_1_option_3_text": "Sad",
+      "category_id": "check_in"
     },
     {
       "id": "check_in_7",
@@ -359,7 +364,8 @@
       "quiz_1_question": "How are you feeling today?",
       "quiz_1_option_1_text": "Happy",
       "quiz_1_option_2_text": "Okay",
-      "quiz_1_option_3_text": "Sad"
+      "quiz_1_option_3_text": "Sad",
+      "category_id": "check_in"
     },
     {
       "id": "check_in_8",
@@ -410,7 +416,8 @@
       "quiz_1_question": "How are you feeling today?",
       "quiz_1_option_1_text": "Happy",
       "quiz_1_option_2_text": "Okay",
-      "quiz_1_option_3_text": "Sad"
+      "quiz_1_option_3_text": "Sad",
+      "category_id": "check_in"
     },
     {
       "id": "check_in_9",
@@ -461,7 +468,8 @@
       "quiz_1_question": "How are you feeling today?",
       "quiz_1_option_1_text": "Happy",
       "quiz_1_option_2_text": "Okay",
-      "quiz_1_option_3_text": "Sad"
+      "quiz_1_option_3_text": "Sad",
+      "category_id": "check_in"
     },
     {
       "id": "check_in_10",
@@ -512,7 +520,8 @@
       "quiz_1_question": "How are you feeling today?",
       "quiz_1_option_1_text": "Happy",
       "quiz_1_option_2_text": "Okay",
-      "quiz_1_option_3_text": "Sad"
+      "quiz_1_option_3_text": "Sad",
+      "category_id": "check_in"
     },
     {
       "id": "check_in_11",
@@ -563,7 +572,8 @@
       "quiz_1_question": "How are you feeling today?",
       "quiz_1_option_1_text": "Happy",
       "quiz_1_option_2_text": "Okay",
-      "quiz_1_option_3_text": "Sad"
+      "quiz_1_option_3_text": "Sad",
+      "category_id": "check_in"
     },
     {
       "id": "check_in_12",
@@ -614,7 +624,8 @@
       "quiz_1_question": "How are you feeling today?",
       "quiz_1_option_1_text": "Happy",
       "quiz_1_option_2_text": "Okay",
-      "quiz_1_option_3_text": "Sad"
+      "quiz_1_option_3_text": "Sad",
+      "category_id": "check_in"
     },
     {
       "id": "check_in_13",
@@ -665,7 +676,8 @@
       "quiz_1_question": "How are you feeling today?",
       "quiz_1_option_1_text": "Happy",
       "quiz_1_option_2_text": "Okay",
-      "quiz_1_option_3_text": "Sad"
+      "quiz_1_option_3_text": "Sad",
+      "category_id": "check_in"
     },
     {
       "id": "check_in_14",
@@ -716,7 +728,8 @@
       "quiz_1_question": "How are you feeling today?",
       "quiz_1_option_1_text": "Happy",
       "quiz_1_option_2_text": "Okay",
-      "quiz_1_option_3_text": "Sad"
+      "quiz_1_option_3_text": "Sad",
+      "category_id": "check_in"
     },
     {
       "id": "check_in_15",
@@ -767,7 +780,8 @@
       "quiz_1_question": "How are you feeling today?",
       "quiz_1_option_1_text": "Happy",
       "quiz_1_option_2_text": "Okay",
-      "quiz_1_option_3_text": "Sad"
+      "quiz_1_option_3_text": "Sad",
+      "category_id": "check_in"
     },
     {
       "id": "check_in_16",
@@ -818,8 +832,8 @@
       "quiz_1_question": "How are you feeling today?",
       "quiz_1_option_1_text": "Happy",
       "quiz_1_option_2_text": "Okay",
-      "quiz_1_option_3_text": "Sad"
+      "quiz_1_option_3_text": "Sad",
+      "category_id": "check_in"
     }
-  ],
-  "_xlsxPath": "data/library/test check_in.xlsx"
+  ]
 }
