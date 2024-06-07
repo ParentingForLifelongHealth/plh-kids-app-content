@@ -18,7 +18,7 @@
       "flow_type": "data_list",
       "flow_name": "check_in",
       "data_list_name": "check_in",
-      "_xlsxPath": "data/modules/check_in.xlsx"
+      "_xlsxPath": "data/modules/test check_in.xlsx"
     },
     "common_categories": {
       "flow_type": "data_list",
@@ -84,7 +84,7 @@
       "flow_type": "data_list",
       "flow_name": "relax",
       "data_list_name": "relax",
-      "_xlsxPath": "data/modules/relax.xlsx"
+      "_xlsxPath": "data/modules/test relax.xlsx"
     },
     "specific_test_categories": {
       "flow_type": "data_list",
@@ -132,28 +132,6 @@
     }
   },
   "generator": {
-    "book_cover_gen": {
-      "flow_type": "generator",
-      "flow_name": "book_cover_gen",
-      "parameter_list": {
-        "input_data_list": "books",
-        "output_flow_name": "book_cover_@gen.id",
-        "output_flow_type": "template",
-        "output_flow_subtype": "generated"
-      },
-      "_xlsxPath": "templates/library/book_generators.xlsx"
-    },
-    "book_page_gen": {
-      "flow_type": "generator",
-      "flow_name": "book_page_gen",
-      "parameter_list": {
-        "input_data_list": "books",
-        "output_flow_name": "book_page_@gen.id",
-        "output_flow_type": "template",
-        "output_flow_subtype": "generated"
-      },
-      "_xlsxPath": "templates/library/book_generators.xlsx"
-    },
     "check_in_article_generator": {
       "flow_type": "generator",
       "flow_name": "check_in_article_generator",
@@ -543,16 +521,6 @@
       "flow_subtype": "generated",
       "flow_type": "template"
     },
-    "book_cover_who_took_my_shoe": {
-      "flow_name": "book_cover_who_took_my_shoe",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "book_page_who_took_my_shoe": {
-      "flow_name": "book_page_who_took_my_shoe",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
     "category_test_check_in": {
       "flow_name": "category_test_check_in",
       "flow_subtype": "generated",
@@ -897,6 +865,11 @@
       "flow_name": "app_menu_terms",
       "_xlsxPath": "templates/app_legal_terms.xlsx"
     },
+    "lib_books": {
+      "flow_type": "template",
+      "flow_name": "lib_books",
+      "_xlsxPath": "templates/library/library_page.xlsx"
+    },
     "library": {
       "flow_type": "template",
       "flow_name": "library",
@@ -936,6 +909,11 @@
       "flow_type": "template",
       "flow_name": "picture_books",
       "_xlsxPath": "templates/library/picture_books.xlsx"
+    },
+    "pop_up_text": {
+      "flow_type": "template",
+      "flow_name": "pop_up_text",
+      "_xlsxPath": "templates/modules/articles.xlsx"
     },
     "question": {
       "flow_type": "template",
