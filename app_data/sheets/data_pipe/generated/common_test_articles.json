@@ -1,0 +1,23 @@
+{
+  "flow_name": "common_test_articles",
+  "flow_subtype": "generated",
+  "flow_type": "data_pipe",
+  "rows": [
+    {
+      "operation": "filter",
+      "args_list": [
+        "id == \"check_in_1\""
+      ],
+      "input_source": "prepped_check_in",
+      "output_target": "test_check_in_articles"
+    },
+    {
+      "operation": "filter",
+      "args_list": [
+        "id == \"relax_1\""
+      ],
+      "input_source": "prepped_relax",
+      "output_target": "test_relax_articles"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "flow_type": "generator",
+  "flow_name": "gen_pipe_common_category_art",
+  "status": "released",
+  "parameter_list": {
+    "input_data_list": "modules",
+    "output_flow_name": "common_{@gen.id}_articles",
+    "output_flow_type": "data_pipe",
+    "output_flow_subtype": "generated"
+  },
+  "rows": [
+    {
+      "operation": "filter",
+      "args_list": [
+        "id == \"@gen.check_in_id\""
+      ],
+      "input_source": "prepped_check_in",
+      "output_target": "{@gen.id}_check_in_articles"
+    },
+    {
+      "operation": "filter",
+      "args_list": [
+        "id == \"@gen.relax_id\""
+      ],
+      "input_source": "prepped_relax",
+      "output_target": "{@gen.id}_relax_articles"
+    }
+  ],
+  "_xlsxPath": "data/modules/test modules_data_pipes.xlsx"
+}

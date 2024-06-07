@@ -776,6 +776,7 @@
               "_translations": {
                 "value": {}
               },
+              "condition": "!!(@local.section_title)",
               "style_list": [
                 "flex: 1"
               ],
@@ -785,6 +786,14 @@
                 "value": [
                   {
                     "fullExpression": "@local.section_title",
+                    "matchedExpression": "@local.section_title",
+                    "type": "local",
+                    "fieldName": "section_title"
+                  }
+                ],
+                "condition": [
+                  {
+                    "fullExpression": "!!(@local.section_title)",
                     "matchedExpression": "@local.section_title",
                     "type": "local",
                     "fieldName": "section_title"
@@ -801,7 +810,8 @@
               },
               "_dynamicDependencies": {
                 "@local.section_title": [
-                  "value"
+                  "value",
+                  "condition"
                 ],
                 "@item.id.dg_top.section_title": [
                   "_nested_name"
@@ -815,6 +825,7 @@
               "_translations": {
                 "value": {}
               },
+              "condition": "!!(@local.section_image_asset)",
               "style_list": [
                 "width: 80px"
               ],
@@ -824,6 +835,14 @@
                 "value": [
                   {
                     "fullExpression": "@local.section_image_asset",
+                    "matchedExpression": "@local.section_image_asset",
+                    "type": "local",
+                    "fieldName": "section_image_asset"
+                  }
+                ],
+                "condition": [
+                  {
+                    "fullExpression": "!!(@local.section_image_asset)",
                     "matchedExpression": "@local.section_image_asset",
                     "type": "local",
                     "fieldName": "section_image_asset"
@@ -840,7 +859,8 @@
               },
               "_dynamicDependencies": {
                 "@local.section_image_asset": [
-                  "value"
+                  "value",
+                  "condition"
                 ],
                 "@item.id.dg_top.icon": [
                   "_nested_name"
@@ -907,12 +927,21 @@
           "_translations": {
             "value": {}
           },
+          "condition": "!!(@local.section_extra_text)",
           "type": "set_variable",
           "_nested_name": "dg_@item.id.pop_up_text",
           "_dynamicFields": {
             "value": [
               {
                 "fullExpression": "@local.section_extra_text",
+                "matchedExpression": "@local.section_extra_text",
+                "type": "local",
+                "fieldName": "section_extra_text"
+              }
+            ],
+            "condition": [
+              {
+                "fullExpression": "!!(@local.section_extra_text)",
                 "matchedExpression": "@local.section_extra_text",
                 "type": "local",
                 "fieldName": "section_extra_text"
@@ -929,7 +958,8 @@
           },
           "_dynamicDependencies": {
             "@local.section_extra_text": [
-              "value"
+              "value",
+              "condition"
             ],
             "@item.id.pop_up_text": [
               "_nested_name"
@@ -964,6 +994,7 @@
               "_cleaned": "click | pop_up: pop_up_text"
             }
           ],
+          "condition": "!!(@local.section_button_text)",
           "parameter_list": {
             "style": "navigation short"
           },
@@ -1008,6 +1039,14 @@
                 ]
               }
             },
+            "condition": [
+              {
+                "fullExpression": "!!(@local.section_button_text)",
+                "matchedExpression": "@local.section_button_text",
+                "type": "local",
+                "fieldName": "section_button_text"
+              }
+            ],
             "_nested_name": [
               {
                 "fullExpression": "dg_@item.id.button",
@@ -1019,7 +1058,8 @@
           },
           "_dynamicDependencies": {
             "@local.section_button_text": [
-              "value"
+              "value",
+              "condition"
             ],
             "@local.pop_up_text": [
               "action_list.0.args.1",
