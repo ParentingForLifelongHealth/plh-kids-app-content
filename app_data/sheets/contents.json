@@ -721,6 +721,11 @@
       "flow_name": "module_overview",
       "_xlsxPath": "templates/modules/module_navigation.xlsx"
     },
+    "module_overview_alt": {
+      "flow_type": "template",
+      "flow_name": "module_overview_alt",
+      "_xlsxPath": "templates/modules/module_navigation.xlsx"
+    },
     "nav_buttons": {
       "flow_type": "template",
       "flow_name": "nav_buttons",
