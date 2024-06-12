@@ -364,6 +364,11 @@
       "flow_name": "category_card",
       "_xlsxPath": "templates/modules/module_navigation.xlsx"
     },
+    "category_card_alt": {
+      "flow_type": "template",
+      "flow_name": "category_card_alt",
+      "_xlsxPath": "templates/modules/module_navigation.xlsx"
+    },
     "enter_dev_mode": {
       "flow_type": "template",
       "flow_name": "enter_dev_mode",
@@ -607,118 +612,8 @@
       "flow_subtype": "generated",
       "flow_type": "template"
     },
-    "relax_10": {
-      "flow_name": "relax_10",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "relax_11": {
-      "flow_name": "relax_11",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "relax_12": {
-      "flow_name": "relax_12",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "relax_13": {
-      "flow_name": "relax_13",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "relax_14": {
-      "flow_name": "relax_14",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "relax_15": {
-      "flow_name": "relax_15",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "relax_16": {
-      "flow_name": "relax_16",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "relax_17": {
-      "flow_name": "relax_17",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "relax_18": {
-      "flow_name": "relax_18",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "relax_19": {
-      "flow_name": "relax_19",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
     "relax_2": {
       "flow_name": "relax_2",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "relax_20": {
-      "flow_name": "relax_20",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "relax_21": {
-      "flow_name": "relax_21",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "relax_22": {
-      "flow_name": "relax_22",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "relax_23": {
-      "flow_name": "relax_23",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "relax_24": {
-      "flow_name": "relax_24",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "relax_3": {
-      "flow_name": "relax_3",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "relax_4": {
-      "flow_name": "relax_4",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "relax_5": {
-      "flow_name": "relax_5",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "relax_6": {
-      "flow_name": "relax_6",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "relax_7": {
-      "flow_name": "relax_7",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "relax_8": {
-      "flow_name": "relax_8",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "relax_9": {
-      "flow_name": "relax_9",
       "flow_subtype": "generated",
       "flow_type": "template"
     },
@@ -737,118 +632,8 @@
       "flow_subtype": "generated",
       "flow_type": "template"
     },
-    "text_relax_10": {
-      "flow_name": "text_relax_10",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "text_relax_11": {
-      "flow_name": "text_relax_11",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "text_relax_12": {
-      "flow_name": "text_relax_12",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "text_relax_13": {
-      "flow_name": "text_relax_13",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "text_relax_14": {
-      "flow_name": "text_relax_14",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "text_relax_15": {
-      "flow_name": "text_relax_15",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "text_relax_16": {
-      "flow_name": "text_relax_16",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "text_relax_17": {
-      "flow_name": "text_relax_17",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "text_relax_18": {
-      "flow_name": "text_relax_18",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "text_relax_19": {
-      "flow_name": "text_relax_19",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
     "text_relax_2": {
       "flow_name": "text_relax_2",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "text_relax_20": {
-      "flow_name": "text_relax_20",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "text_relax_21": {
-      "flow_name": "text_relax_21",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "text_relax_22": {
-      "flow_name": "text_relax_22",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "text_relax_23": {
-      "flow_name": "text_relax_23",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "text_relax_24": {
-      "flow_name": "text_relax_24",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "text_relax_3": {
-      "flow_name": "text_relax_3",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "text_relax_4": {
-      "flow_name": "text_relax_4",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "text_relax_5": {
-      "flow_name": "text_relax_5",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "text_relax_6": {
-      "flow_name": "text_relax_6",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "text_relax_7": {
-      "flow_name": "text_relax_7",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "text_relax_8": {
-      "flow_name": "text_relax_8",
-      "flow_subtype": "generated",
-      "flow_type": "template"
-    },
-    "text_relax_9": {
-      "flow_name": "text_relax_9",
       "flow_subtype": "generated",
       "flow_type": "template"
     },
