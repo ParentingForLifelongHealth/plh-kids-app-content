@@ -389,8 +389,8 @@
           ],
           "parameter_list": {
             "variant": "icon",
-            "icon_true_asset": "plh_images/icons/heart_filled.svg",
-            "icon_false_asset": "plh_images/icons/heart.svg"
+            "icon_true_asset": "images/icons/heart_filled.svg",
+            "icon_false_asset": "images/icons/heart.svg"
           },
           "_nested_name": "button_@local.book_data.id.toggle_bar_@local.book_data.id",
           "_dynamicFields": {
