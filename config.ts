@@ -36,6 +36,6 @@ config.app_config.APP_THEMES.available = ["default", "professional"];
 config.app_config.APP_THEMES.defaultThemeName = "professional";
 config.app_config.APP_UPDATES.enabled = true;
 config.app_config.APP_UPDATES.completeUpdateTemplate = "app_update_complete";
-config.app_config.APP_FOOTER_DEFAULTS.templateName = "footer";
+config.app_config.APP_FOOTER_DEFAULTS.template = "footer";
   
 export default config;
